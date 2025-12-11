@@ -1,0 +1,126 @@
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.title {
+    text-align: center;
+    margin: 1.5rem 0 0.5rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--color-text-tertiary);
+    font-size: 0.95rem;
+}
+
+.brandInfoCard {
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+.brandInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infoItem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.infoLabel {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    min-width: 120px;
+}
+
+.infoValue {
+    color: var(--color-text-primary);
+    flex: 1;
+}
+
+.infoLink {
+    color: var(--color-primary);
+    text-decoration: none;
+    flex: 1;
+}
+
+.infoLink:hover {
+    text-decoration: underline;
+}
+
+.error {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.error h2 {
+    margin-bottom: 1rem;
+    color: var(--color-danger);
+}
+
+.error p {
+    margin-bottom: 2rem;
+    color: var(--color-text-secondary);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    background-color: var(--color-bg-primary);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.footerText {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 2rem 0;
+    }
+
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    .brandInfo {
+        gap: 0.75rem;
+    }
+
+    .infoItem {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .infoLabel {
+        min-width: auto;
+    }
+
+    .footer {
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+    }
+}

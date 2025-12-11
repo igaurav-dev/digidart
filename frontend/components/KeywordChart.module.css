@@ -1,0 +1,19 @@
+.chartCard {
+    margin-top: 2rem;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+.chartWrapper {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .chartWrapper {
+        padding: 0.5rem 0;
+    }
+}
